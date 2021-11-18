@@ -3,9 +3,9 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '10'
+- '11'
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 fftw:
@@ -13,7 +13,7 @@ fftw:
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mpi:
-- mpich
+- openmpi
 numpy:
 - '1.18'
 pin_run_as_build:
@@ -23,9 +23,9 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.6.* *_73_pypy
+- 3.7.* *_cpython
 target_platform:
 - osx-64
 zip_keys:
-- - numpy
-  - python
+- - python
+  - numpy
