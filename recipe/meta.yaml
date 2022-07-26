@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/6d/89/0f5b60cfd1d8dbe89f1f7293ee388ceef66f537ee8b5988cb6c7a8d35c6b/dedalus-2.2207.tar.gz
   sha256: 158adebf4b4939bb3d322dc81176965997f84a9ce54e020210db52eda4773dc0
 
 build:
