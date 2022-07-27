@@ -1,5 +1,5 @@
 {% set name = "dedalus" %}
-{% set version = "2.2006" %}
+{% set version = "2.2207" %}
 
 {% set mpi_prefix = "mpi_" + mpi %}
 
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7b6005c6c9b3b85c42da9a2ae85219b2722e2f61bda714d2518c4c058fd5d8df
+  sha256: 158adebf4b4939bb3d322dc81176965997f84a9ce54e020210db52eda4773dc0
 
 build:
-  number: 4
+  number: 0
   skip: true  # [win or py>37]
 
 requirements:
