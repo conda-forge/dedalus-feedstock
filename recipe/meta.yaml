@@ -54,6 +54,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - kburns
     - mxr-conda
     - rluria14
     - oblute
