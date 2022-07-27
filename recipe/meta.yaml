@@ -43,6 +43,7 @@ requirements:
     - pytest-benchmark
     - pytest-cov
     - pytest-parallel
+    - openssh  # [linux]
 
 test:
   imports:
