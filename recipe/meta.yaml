@@ -1,5 +1,5 @@
 {% set name = "dedalus" %}
-{% set version = "2.2207.1" %}
+{% set version = "2.2207.2" %}
 {% set mpi_prefix = "mpi_" + mpi %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5bda778e3fd4466d76a60672961d1e8dcf52ff9f2e29aa24ec923569ee8a3417
+  sha256: 7d8196639ec9b1bb8447155f8c6d3d172c7c12b04ad9e7e3f97552715e364bd8
 
 build:
   number: 0
@@ -31,14 +31,15 @@ requirements:
     - python
     - docopt
     - hdf5
-    - h5py >=2.10.0
+    - h5py >=3.0.0
     - fftw
     - fftw * {{ mpi_prefix }}_*
     - matplotlib-base
     - {{ mpi }}
     - mpi4py >=2.0.0
     - {{ pin_compatible('numpy') }}
-    - scipy >=1.4.0
+    - scipy >=1.9.1
+    - py
     - pytest
     - pytest-benchmark
     - pytest-cov
