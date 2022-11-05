@@ -31,14 +31,15 @@ requirements:
     - python
     - docopt
     - hdf5
-    - h5py >=2.10.0
+    - h5py >=3.0.0
     - fftw
     - fftw * {{ mpi_prefix }}_*
     - matplotlib-base
     - {{ mpi }}
     - mpi4py >=2.0.0
     - {{ pin_compatible('numpy') }}
-    - scipy >=1.4.0
+    - scipy >=1.9.1
+    - py
     - pytest
     - pytest-benchmark
     - pytest-cov
