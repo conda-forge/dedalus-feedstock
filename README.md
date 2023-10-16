@@ -1,11 +1,11 @@
-About dedalus
-=============
+About dedalus-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dedalus-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/dedalus/
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dedalus-feedstock/blob/main/LICENSE.txt)
 
 Summary: A flexible framework for solving PDEs with modern spectral methods.
 
@@ -41,6 +41,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_mpimpichpython3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10325&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/dedalus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichpython3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_64_mpimpichpython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10325&branchName=main">
@@ -66,6 +73,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10325&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/dedalus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpipython3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_mpiopenmpipython3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10325&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/dedalus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpipython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -97,6 +111,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_mpimpichpython3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10325&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/dedalus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichpython3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_mpimpichpython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10325&branchName=main">
@@ -122,6 +143,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10325&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/dedalus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpipython3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpiopenmpipython3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10325&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/dedalus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpipython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
