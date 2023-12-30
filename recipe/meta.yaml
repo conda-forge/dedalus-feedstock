@@ -1,5 +1,5 @@
 {% set name = "dedalus" %}
-{% set version = "2.2207.3" %}
+{% set version = "3.0.0" %}
 {% set mpi_prefix = "mpi_" + mpi %}
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 549dc967cfb649ae08c9f891389d74488f34c17850b95127a3f9ed51c758c9ad
+  sha256: 906c76656e5ed6a732a166550f75e5223b545a8cc40aa460da5ddc54292bc3c2
 
 build:
-  number: 1
-  skip: true  # [win]
+  number: 0
+  skip: true  # [win or py<39]
 
 requirements:
   build:
@@ -21,7 +21,7 @@ requirements:
     - pip
     - python
     - setuptools
-    - cython >=0.22
+    - cython >=3.0.5
     - mpi4py >=2.0.0
     - numpy >=1.20.0
     - {{ mpi }}
@@ -30,13 +30,14 @@ requirements:
   run:
     - python
     - docopt
-    - hdf5
-    - h5py >=3.0.0
+    - hdf5 * {{ mpi_prefix }}_*
+    - h5py >=3.0 {{ mpi_prefix }}_*
     - fftw
     - fftw * {{ mpi_prefix }}_*
     - matplotlib-base
     - {{ mpi }}
     - mpi4py >=2.0.0
+    - numexpr
     - {{ pin_compatible('numpy') }}
     - scipy >=1.9.1
     - py
@@ -45,6 +46,7 @@ requirements:
     - pytest-cov
     - pytest-parallel
     - openssh  # [linux]
+    - xarray
 
 test:
   imports:
