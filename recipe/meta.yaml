@@ -40,7 +40,7 @@ requirements:
     - mpi4py >=2.0.0
     - numexpr
     - numpy >=1.20.0
-    - scipy >=1.9.1
+    - scipy >=1.9.1, <1.14
     - py
     - pytest
     - pytest-benchmark
