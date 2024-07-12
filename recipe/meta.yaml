@@ -11,7 +11,7 @@ source:
   sha256: fb8db776d2bf0c9112082d0d6d88b841fffb8b3e979067ba9f708042da1437f3
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win or py<39]
 
 requirements:
