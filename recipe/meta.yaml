@@ -16,15 +16,20 @@ build:
 
 requirements:
   build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - cython                                 # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
+    - {{ mpi }}                              # [build_platform != target_platform and mpi == "openmpi"]
   host:
     - pip
     - python
     - setuptools
     - cython >=3.0.5
     - mpi4py >=2.0.0
-    - numpy >=1.20.0
+    - numpy
     - {{ mpi }}
     - fftw
     - fftw * {{ mpi_prefix }}_*
@@ -39,7 +44,7 @@ requirements:
     - {{ mpi }}
     - mpi4py >=2.0.0
     - numexpr
-    - numpy >=1.20.0
+    - numpy
     - scipy >=1.9.1, <1.14
     - py
     - pytest
