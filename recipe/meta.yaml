@@ -45,7 +45,7 @@ requirements:
     - {{ pin_compatible('mpi4py') }}
     - numexpr
     - numpy
-    - scipy >=1.9.1, <1.14
+    - scipy >=1.9.1
     - py
     - pytest
     - pytest-benchmark
